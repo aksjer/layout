@@ -1,0 +1,18 @@
+<md-sidenav-container>
+
+  <md-sidenav #sidenav>
+    <div class="flex-container sidenav-item" *ngFor="let item of menuItems" routerLink="{{item.route}}" (click)="sidenav.toggle();">
+      <md-icon>{{item.icon}}</md-icon>
+      <h4>{{item.text}}</h4>
+    </div>
+  </md-sidenav>
+
+  <md-toolbar>
+    <button md-icon-button (click)="sidenav.toggle();"><md-icon>menu</md-icon></button>
+  </md-toolbar>
+
+  <div #secondaryToolbar></div>
+
+  <router-outlet></router-outlet>
+
+</md-sidenav-container>

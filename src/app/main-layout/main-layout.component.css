@@ -1,0 +1,19 @@
+md-sidenav {
+  width: 200px;
+}
+
+.sidenav-item {
+  margin-left: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidenav-item:hover {
+  /*transform: translateX(5px);*/
+  transform: scale(1.01);
+  /*transition-duration: 400ms;*/
+}
+
+.sidenav-item h4 {
+  margin-left: 10px;
+}
